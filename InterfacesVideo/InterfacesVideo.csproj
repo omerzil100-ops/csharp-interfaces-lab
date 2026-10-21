@@ -5,4 +5,7 @@
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="C:\Users\USER\Downloads\Interfaces שיעורי בית עומר זילברמן.cs" Link="Interfaces שיעורי בית עומר זילברמן.cs" />
+  </ItemGroup>
 </Project>
