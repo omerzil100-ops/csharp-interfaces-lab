@@ -5,20 +5,23 @@ public class Program
     public static void Main()
     {
         // משימה 2: צרו כאן את אובייקט ה-Drone לאחר מימוש המחלקה.
+        Drone drone = new Drone("dji", 0);
 
         IFlyable[] flyers =
         {
             new Bird(),
             new Airplane(),
-            new Superman()
+            new Superman(),
+            drone
             // משימה 2: הוסיפו גם את ההפניה לרחפן שיצרתם.
-        };
+        }; 
 
         IChargeable[] devices =
         {
             new ElectricCar(),
             new Phone(),
-            new RobotVacuum()
+            new RobotVacuum(),
+            drone
             // משימה 2: הוסיפו את ההפניה לאותו רחפן.
         };
 
@@ -31,6 +34,7 @@ public class Program
         Console.WriteLine("--- Fly through IFlyable[] ---");
         FlyAll(flyers);
         // משימה 2: הדפיסו כאן את אחוז הסוללה של הרחפן לאחר הטיסה.
+        Console.WriteLine(drone.BatteryLevel());
 
         object[] items =
         {

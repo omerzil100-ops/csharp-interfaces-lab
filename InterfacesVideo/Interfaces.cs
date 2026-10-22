@@ -6,4 +6,5 @@ public interface IFlyable
 public interface IChargeable
 {
     void Charge();
+    string ChargingStatus;
 }
